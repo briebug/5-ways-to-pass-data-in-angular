@@ -1,0 +1,10 @@
+<h2>Inputs</h2>
+<p>Inputs are the simplest and most direct way of passing data to a child component. Simply adding the <code>@Input</code> decorator to a property will allow it to be passed in. But you can use <em>ngOnChanges</em> or <em>getters</em> and <em>setters</em> to react to any changes within your child component.</p>
+<p>Below we have 2 child components which reflect the value of this slider in the parent component. But they also <em>react</em> to changes by printing a log every time the value changes.</p>
+<input type="range" min="0" max="500" step=".01" [formControl]="priceCtrl">
+
+<p>Here we use <em>ngOnChanges</em> to react to the input value:</p>
+<app-inputs-child1 [price]="priceCtrl.value"></app-inputs-child1>
+
+<p>Here we use a <em>getter</em> and <em>setter</em> to react to the input value:</p>
+<app-inputs-child2 [price]="priceCtrl.value"></app-inputs-child2>

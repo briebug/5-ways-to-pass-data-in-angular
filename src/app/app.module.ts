@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InputsModule } from './inputs/inputs.module';
+import { ViewchildModule } from './viewchild/viewchild.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { InputsModule } from './inputs/inputs.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InputsModule
+    InputsModule,
+    ViewchildModule
   ],
   providers: [],
   bootstrap: [AppComponent]

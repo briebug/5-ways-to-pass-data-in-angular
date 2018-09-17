@@ -2,5 +2,6 @@
 <ol>
   <li *ngFor="let technique of techniques"><a [routerLink]="technique.link">{{ technique.title }}</a></li>
 </ol>
+<p>As a handy indicator, child components are displayed in <span class="child">red</span>.
 <hr>
 <router-outlet></router-outlet>

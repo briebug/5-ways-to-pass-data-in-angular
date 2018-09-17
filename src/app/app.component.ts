@@ -11,7 +11,7 @@ export class AppComponent {
       link: 'inputs'
     },
     {
-      title: 'Setting properties with @ViewChild',
+      title: 'Setting and getting properties with ViewChild',
       link: 'view-child'
     },
     {

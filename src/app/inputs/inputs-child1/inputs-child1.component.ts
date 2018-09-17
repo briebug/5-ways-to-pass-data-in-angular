@@ -11,7 +11,7 @@ export class InputsChild1Component implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     // you don't have to do anything with the passed changes
-    console.log('[using ngOnChanges] price changed!', this.price);
+    console.log('[Input: using ngOnChanges] reacting to price changed!', this.price);
   }
 
 }

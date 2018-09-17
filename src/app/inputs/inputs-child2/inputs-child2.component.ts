@@ -11,13 +11,13 @@ export class InputsChild2Component {
   // to hold the value so it can be set and get.
   private _price: number;
 
+  @Input()
+  set price(val: number) {
+    this._price = val;
+    console.log('[Input: using setter] reacting to price changed!', val);
+  }
   get price(): number {
     return this._price;
-  }
-  @Input()
-  set price(value: number) {
-    this._price = value;
-    console.log('[using setter] price changed!', value);
   }
 
 }

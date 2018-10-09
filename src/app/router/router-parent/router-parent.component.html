@@ -1,0 +1,16 @@
+<h2>The Angular Router</h2>
+<p>The Angular router is a powerful way to manage state in your app, as well as pass data to child components - specifically with <em>route resolvers</em>.</p>
+<p>Route resolvers might sound scary, but all it does is it prevents navigation to a route until the Observable returned by the resolver emits a value.</p>
+<p>In this example, our resolver simply returns an <code>http.get</code>. The resolver's <code>resolve()</code> method accepts 1 argument, the activated route; so that we can request data specific to the params passed in the route.</p>
+<h3>Demo</h3>
+<p>This component holds a sub-nav, and a router-outlet for a child component to show the details of each item. This is a common pattern called "master-detail" view.</p>
+<p>Click a cryptocurrency and the route changes to the symbol of that currency, and displays its price.</p>
+<ul class="inline">
+  <li><a [routerLink]="['/router', 'BTC']">bitcoin</a></li>
+  <li><a [routerLink]="['/router', 'DOGE']">dogecoin</a></li>
+  <li><a [routerLink]="['/router', 'ETH']">ethereum</a></li>
+  <li><a [routerLink]="['/router', 'LTC']">litecoin</a></li>
+</ul>
+<div class="child">
+  <router-outlet></router-outlet>
+</div>

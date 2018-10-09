@@ -7,8 +7,16 @@ code {
   background: lightgray;
 }
 .child {
-  color: red;
+  color: green;
 }
 .inline-input {
   margin: 0 10px;
+}
+ul.inline {
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0 15px;
+  }
 }

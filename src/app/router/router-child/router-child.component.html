@@ -1,0 +1,3 @@
+<h4>{{ coinData.name }} ({{ coinData.symbol}})</h4>
+<p>Price: <strong>{{ coinData.quotes?.USD?.price | currency }}</strong></p>
+<p><small>Last updated: {{ coinData.last_updated * 1000 | date: 'short' }}</small></p>

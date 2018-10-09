@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { InputsModule } from './inputs/inputs.module';
 import { ViewchildModule } from './viewchild/viewchild.module';
 import { BehaviorSubjectsModule } from './behavior-subjects/behavior-subjects.module';
+import { RouterDemoModule } from './router/router-demo.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BehaviorSubjectsModule } from './behavior-subjects/behavior-subjects.mo
     InputsModule,
     ViewchildModule,
     BehaviorSubjectsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterDemoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

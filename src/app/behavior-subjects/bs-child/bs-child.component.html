@@ -1,0 +1,5 @@
+<p>Change the value of BTC from the child component:
+  <input [formControl]="amount" type="text" class="inline-input" placeholder="enter amount">
+  <button type="button" (click)="changeAmount()">Change</button>
+  <strong> {{ service.bitcoinValueSubject | async | currency }}</strong>
+</p>

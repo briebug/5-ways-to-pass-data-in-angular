@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
 })
 export class InputsChild2Component {
 
-  // since a get accessor (get or set method) is required
+  // since a get accessor (get method) is required
   // to return a value, we must supply a private property
   // to hold the value so it can be set and get.
   private _price: number;

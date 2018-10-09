@@ -1,7 +1,7 @@
 <h2>ViewChild</h2>
 <p>Using ViewChild, you can get and set properties of a child component, and also its methods. This could be handy for dynamically inserted components or elements, because you can reference a view child by a component class or template reference variable. To use ViewChild, you pass it the class of the child component, or a template reference variable string (minus the #), and this will decorate a component property like so:</p>
 <p><code>@ViewChild(PriceComponent) priceComponent;</code></p>
-<p>Below, ViewChild is demonstrated by the buttons to set and get the price. The <strong>Set child value</strong> button will set the value of the child component to the value of the slider. Upon being set, the child component adds a $100 markup.</p>
+<p>Below, ViewChild is demonstrated by the buttons to set and get the price. The <strong>Set child value</strong> button will set the value of the child component to the value of the slider.</p>
 <p>The <strong>Get child value</strong> shows the child component's value in the parent component. Of course this isn't practical, but it shows how data can be passed back and forth between parent and child components.</p>
 
 <input type="range" min="0" max="500" step=".01" [formControl]="priceCtrl"> {{ priceCtrl.value }}<br>

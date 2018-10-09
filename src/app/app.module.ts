@@ -9,6 +9,7 @@ import { InputsModule } from './inputs/inputs.module';
 import { ViewchildModule } from './viewchild/viewchild.module';
 import { BehaviorSubjectsModule } from './behavior-subjects/behavior-subjects.module';
 import { RouterDemoModule } from './router/router-demo.module';
+import { NgrxModule } from './ngrx/ngrx.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RouterDemoModule } from './router/router-demo.module';
     ViewchildModule,
     BehaviorSubjectsModule,
     ReactiveFormsModule,
-    RouterDemoModule
+    RouterDemoModule,
+    NgrxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

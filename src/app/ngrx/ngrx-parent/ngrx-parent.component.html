@@ -1,0 +1,12 @@
+<h2>NgRx</h2>
+<p>Should you be passing data into your child components? Or would it be better to centrally manage all data and app state in one place?</p>
+<p><a href="https://github.com/ngrx/platform" target="_blank">NgRx</a> is a powerful and robust state management system based on redux. It's a reactive, observable wrapper around your api service, but it also manages app state from one place in your app - "a single source of truth".</p>
+<p>With NgRx, each of your components simply uses selectors that look like this:</p>
+<p><code>entities$ = this.store.pipe(select(getAllEntitiesAsArray));</code></p>
+<p>Or actions that look like this:</p>
+<p><code>this.store.dispatch(new EntityAction({{ '{' }} entity: this.myEntity }));</code></p>
+<p>Requests are minimized because the data is cached, but still kept in sync with the server.</p>
+<p>Small apps won't require NgRx, but when you are asked to build an enterprise-grade app for a client, it's nice to know you have NgRx at your disposal.</p>
+<p>NgRx requires quite a lot of files to setup, but thankfully we at Briebug have built a schematic to help you gen-out those files quickly. We call it the <a href="">ngrx-entity-generator</a>. It will create all the necessary actions, reducers, and effects, and even provides tests! All you need to do is customize the model and the service to your backend.</p>
+<p>Check out the separate demo app to see what ngrx-entity-generator generates and how NgRx works.</p>
+<h3><a href="https://github.com/briebug">Demo</a></h3>

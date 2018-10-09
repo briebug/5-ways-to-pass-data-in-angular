@@ -6,6 +6,7 @@ import { BsParentComponent } from './behavior-subjects/bs-parent/bs-parent.compo
 import { RouterParentComponent } from './router/router-parent/router-parent.component';
 import { RouterChildComponent } from './router/router-child/router-child.component';
 import { CryptoResolver } from './router/crypto.resolver';
+import { NgrxParentComponent } from './ngrx/ngrx-parent/ngrx-parent.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
         resolve: { coinData: CryptoResolver }
       }
     ]
+  },
+  {
+    path: 'ngrx',
+    component: NgrxParentComponent
   }
 ];
 

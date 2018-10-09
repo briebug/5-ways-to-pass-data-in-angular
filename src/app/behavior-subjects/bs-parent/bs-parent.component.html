@@ -2,7 +2,7 @@
 <p>BehaviorSubjects in services are a simple, powerful way to share data throughout your app. They are as close to <em>$broadcast</em> and <em>$emit</em> in AngularJS as it gets in Angular. The Observable pattern allows you to react to changes whenever they occur in parent and child component alike, while maintaining a single instance.</p>
 
 <h3>Demo</h3>
-<p>In this demo, we pretend to have found a way to manipulate the price of Bitcoin 😉. Enter in the amount you want it to change from either the parent or child component and value is updated everywhere.</p>
+<p>In this demo, we have found a way to manipulate the price of Bitcoin 😉. Enter in the amount you want it to change (negative or positive) from either the parent or child component and the value is updated everywhere.</p>
 <p>Change the value of BTC from the parent component:
   <input [formControl]="amount" type="text" class="inline-input" placeholder="enter amount">
   <button type="button" (click)="changeAmount()">Change</button>

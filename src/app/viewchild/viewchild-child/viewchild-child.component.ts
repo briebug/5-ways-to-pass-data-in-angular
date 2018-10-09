@@ -10,7 +10,7 @@ export class ViewchildChildComponent {
 
   @Input()
   set price(val: number) {
-    this._price = val + 100;
+    this._price = val;
   }
   get price(): number {
     return this._price;

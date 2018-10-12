@@ -10,7 +10,7 @@ export class ViewchildParentComponent {
   priceCtrl = new FormControl(200);
   childPrice: number;
 
-  @ViewChild(ViewchildChildComponent) child;
+  @ViewChild('price') child;
 
   setChildPrice() {
     this.child.price = this.priceCtrl.value;

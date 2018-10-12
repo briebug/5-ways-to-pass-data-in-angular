@@ -6,7 +6,7 @@
 
 <input type="range" min="0" max="500" step=".01" [formControl]="priceCtrl"> {{ priceCtrl.value }}<br>
 
-<app-viewchild-child class="child"></app-viewchild-child>
+<app-viewchild-child #price class="child"></app-viewchild-child>
 
 <button type="button" (click)="setChildPrice()" style="margin-right: 10px">Set child value</button> <button type="button" (click)="getChildPrice()">Get child value</button>
 <p *ngIf="childPrice">Child price: {{ childPrice | currency }}</p>
